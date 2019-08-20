@@ -6,10 +6,5 @@ pipeline {
         bat './gradlew bootJar'
       }
     }
-    stage('Test') {
-      steps {
-        bat './gradlew test'
-      }
-    }
   }
 }
