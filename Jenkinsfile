@@ -1,3 +1,6 @@
+plugins {
+  id "org.sonarqube" version "2.7"
+}
 pipeline {
   agent any
   stages {
