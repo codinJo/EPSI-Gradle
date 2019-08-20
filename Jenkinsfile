@@ -3,7 +3,12 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        sh './gradlew jar'
+        sh './gradlew bootJar'
+      }
+    }
+    stage('Test') {
+      steps {
+        sh './gradlew test'
       }
     }
   }
